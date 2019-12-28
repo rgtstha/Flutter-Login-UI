@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui/style_guide.dart';
 import 'widgets/CustomButton.dart';
 import 'widgets/InputWidget.dart';
+import 'package:flutter_ui/forget_password.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -83,7 +84,10 @@ class _LoginPageState extends State<LoginPage> {
                     Spacer(),
                     GestureDetector(
                       onTap: () {
-                        //Todo 1: Write code what to do if user pressed forget password.
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return ForgotPasswordPage();
+                        }));
                       },
                       child: Text(
                         'Forget Password?',

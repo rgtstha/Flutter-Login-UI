@@ -3,8 +3,11 @@ import 'package:flutter/cupertino.dart';
 const String kHeadingText = "Access your account to manage all "
     "your services";
 
+const String kFPasswordHeadingText =
+    "Enter your email address to receive a link to reset your password.";
+
 const kHeadingStyle = TextStyle(
-    fontSize: 30,
+    fontSize: 25,
     fontFamily: 'Poppins',
     color: Color(0xFF3B064D),
     fontWeight: FontWeight.w600);
